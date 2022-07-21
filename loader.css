@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|ZCOOL+KuaiLe&display=swap');
+
+.loader{
+    font-family: 'ZCOOL KuaiLe', cursive;;
+    font-size: 45px;
+    color: green;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.loader::after{
+    content: '\2026';
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: bottom;
+    animation: dots steps(4, end) 2s infinite;
+    width: 0px;
+}
+
+@keyframes dots {
+    to {
+        width: 1.25em;
+    }
+}
+
